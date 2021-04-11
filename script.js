@@ -16,11 +16,16 @@ function writePassword() {
 
 }
 
-//using if else statements to confirm choices in order to generate the password
+//using if else statements to confirm user's choices in order to generate the password
 function generatePassword() {
   var passwordLength = prompt("Please choose the length of your password between 8-128 characters.");
-if(!passwordLength < 8 || passwordLength > 128){
+if(!passwordLength >=8);
+else {passwordLength = prompt("Please choose a length between 8-128 characters.")
 }
+if(passwordLength <=128);
+else{passwordLength = prompt("Please choose a length between 8-128 characters.")
+}
+
 var includeuppers = confirm("Do you want to include upper case letters?")
 if(includeuppers) {
   passLength = passLength.concat(UPPERCASE_CHAR_CODES)
